@@ -34,14 +34,14 @@ def format_text(row, tokenizer):
         + "Note : The above list of data subjects and their corresponding synonyms are not exhaustive, and there can be other data subjects and synonyms not mentioned above."
         + E_SYS
         + B_CODE
-        + "Code : ```" + row["code"] + "```"
-        + "Filename : " + row["fileName"]
+        + "Repository : " + row["repoName"]
+        + "DataElement : " + row["name"]
         + "Match : " + row["match"]
-        + "Data Element : " + row["name"]
-        + "Repo Name : " + row["repoName"]
+        + "Filename : " + row["fileName"]
+        + "Code : ```" + row["code"] + "```"
         + E_CODE
-        + "Analyze the given `Code` snippet, the highlighted `Match` and the `Filename` in a codebase with the given `Repo Name`. "
-          "Extract potential data subject or individual/group that the `Match` could represent. If there are multiple potential matches, return a single most relevant Data Subject.\n"
+        + "Given the `Code` snippet from a specific `Filename`, identify the potential data subject or individual that the highlighted `Match` could represent, especially in the context of the associated `DataElement` which represents a specific personal data element, PII, or PHI. Understand the interplay between the `Code`, its origin (`Filename`), and the nature of the `Match` to determine the most probable data subject. If a synonym is identified, associate it with its major label. If no specific data subject can be identified, return the label 'NA'.\n"
+        + "If there are multiple potential matches, return a single most relevant Data Subject.\n"
         + E_INST
         + B_DTSB
         + row["dataSubject"]
