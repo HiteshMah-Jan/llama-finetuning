@@ -51,7 +51,8 @@ def format_text(row, tokenizer):
 
 
 def get_custom_dataset(dataset_config, tokenizer, split):
-    full_dataset = datasets.load_dataset("Privado/data-subjects", split="train")
+    full_dataset = datasets.load_dataset("json", data_files="data_subjects_all.json", split="train")
+    # data_subjects_all.json is the dataset file and should be present inside the datasets dir
 
     # Since the dataset has no train/test split, we create one and select it
     dataset = full_dataset.train_test_split(
