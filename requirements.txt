@@ -1,0 +1,10 @@
+modal
+huggingface_hub
+transformers
+torch
+llama_recipes
+git+https://github.com/huggingface/transformers.git@main accelerate
+
+# pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu118
+
+# pip install git+https://github.com/huggingface/transformers.git@main accelerate
