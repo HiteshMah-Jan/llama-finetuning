@@ -9,19 +9,19 @@ B_DTSB, E_DTSB = "\n[DTSB]\n", "\n[/DTSB]\n"
 NEW_LINE = "\n"
 
 EXAMPLE_DATA_SUBJECTS = [
-    '- "Doctor" (synonyms: "Physician", "Specialist", "Surgeon")',
-    '- "Patient" (synonyms: "Care Recipient")',
-    '- "Secretary" (synonyms: "Administrative Assistant", "Clerk")',
-    '- "Receptionist" (synonyms: "Front Desk", "Welcome Staff")',
-    '- "User" (synonyms: "End User", "Consumer")',
-    '- "Policyholder"',
-    '- "Claimant"',
-    '- "Employee" (synonyms: "Worker", "Staff")',
-    '- "Guardian" (synonyms: "Custodian", "Protector", "Parent")',
-    '- "Student" (synonyms: "Learner", "Pupil")',
-    '- "Partner" (synonyms: "Collaborator", "Associate")',
-    '- "Seller" (synonyms: "Vendor", "Merchant")',
-    '- "Buyer" (synonyms: "Purchaser", "Client")'
+    '- Doctor (synonyms: Physician, Specialist, Surgeon)',
+    '- Patient (synonyms: Care Recipient)',
+    '- Secretary (synonyms: Administrative Assistant, Clerk)',
+    '- Receptionist (synonyms: Front Desk, Welcome Staff)',
+    '- User (synonyms: End User, Consumer)',
+    '- Policyholder',
+    '- Claimant',
+    '- Employee (synonyms: Worker, Staff)',
+    '- Guardian (synonyms: Custodian, Protector, Parent)',
+    '- Student (synonyms: Learner, Pupil)',
+    '- Partner (synonyms: Collaborator, Associate)',
+    '- Seller (synonyms: Vendor, Merchant)',
+    '- Buyer (synonyms: Purchaser, Client)'
 ]
 
 def format_text(row, tokenizer):
