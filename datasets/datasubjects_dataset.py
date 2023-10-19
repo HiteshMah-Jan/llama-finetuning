@@ -40,8 +40,7 @@ def format_text(row, tokenizer):
         + "Filename : " + row["fileName"]
         + "Code : ```" + row["code"] + "```"
         + E_CODE
-        + "Given the `Code` snippet from a specific `Filename`, identify the potential data subject or individual that the highlighted `Match` could represent, especially in the context of the associated `DataElement` which represents a specific personal data element, PII, or PHI. Understand the interplay between the `Code`, its origin (`Filename`), and the nature of the `Match` to determine the most probable data subject. If a synonym is identified, associate it with its major label. If no specific data subject can be identified, return the label 'NA'.\n"
-        + "If there are multiple potential matches, return a single most relevant Data Subject.\n"
+        + "Given the `Code` snippet found in a specific `Filename`, identify the potential data subject or individual that the highlighted `Match` found in `Code` could represent, especially in the context of the associated `DataElement` which represents a specific personal data element, PII, or PHI. Understand the interplay between `Code`, its `Filename`, and the nature of the `Match` to determine the most probable data subject. If a synonym is identified, associate it with a primary label. If no specific data subject can be identified, return the label 'NA'. Return a single most relevant Data Subject.\n"
         + E_INST
         + B_DTSB
         + row["dataSubject"]
